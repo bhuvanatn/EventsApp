@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Event Registration</title>
+
+</head>
+<body>
+  <div>
+      <a href="EventsDetails.html">Event Details</a>
+      <a href="NewEvent.html">Create Event</a>
+      <a href="EditProfile.html">Edit Profile</a>
+
+  </div>
+  <div ng-controller="EditEventController">
+    <div>{{title}}</div>
+
+ <form>
+  <fieldset>
+    <label for="eventName">Event Name:</label>
+    <input id="eventName" type="text" name="name" ng-model="event.name" value="">{{event.name}}<br />
+    <label for="eventDate"> Event Date:</label>
+    <input id ="eventDate" type="text" name="date" ng-model="event.date" value=""> <br />
+    <label for="eventTime">Event Time:</label>
+    <input id ="eventTime"type="text" name="time" value="" ng-model="event.time"><br /><br />
+    <label id="eventLocation" for="eventLocation">Event Location:</label>
+    <br /><br />
+    Address:<input id ="eventAddress" type="text" ng-model="event.location.address"><br />
+    City:<input id ="eventCity" type="text" ng-model="event.location.city"><br />
+    Provices:<input id="eventProvince" type="text" ng-model="event.location.province"><br />
+    ImageUrl:<input id = "eventImageUrl" type="text" ng-model="event.imageUrl"><br />
+    <img ng-src="{{event.imageUrl}}" alt="" />
+    <br />
+    <br />
+
+  </fieldset>
+  <button type="submit" ng-click="saveEvent(event)">Save</button>
+  <button type="button" ng-click="cancelEdit()">Cancel</button>
+ </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-resource.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script src="controller/EventsController.js"></script>
+  <script type="text/javascript" src="controller/EditEventController.js"></script></body>
+  <script type="text/javascript" src="services/EventData.js"></script>
+  <script type="text/javascript" src="controller/EditProfileController.js"></script>
+  <script type="text/javascript" src="services/GravatarUrlBuilder.js"></script>
+
+
+
+</body>
+</html>

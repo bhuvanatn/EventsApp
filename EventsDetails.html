@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Event Registration</title>
+
+</head>
+<body>
+  <div>
+      <a href="EventsDetails.html">Event Details</a>
+      <a href="NewEvent.html">Create Event</a>
+      <a href="EditProfile.html">Edit Profile</a>
+
+  </div>
+<div ng-controller="EventsController" class="event-details">
+  <h1>Event Details</h1>
+  <div class="arrowsParent">
+  <div class="arrowsUp">
+    <img ng-src="{{event.imageUpArrow}}" ng-click="upVoteCount()">
+  </div>
+  <div><label for="">{{count}}</label></div>
+  <div class="arrowsDown">
+    <img ng-src="{{event.imagedownArrow}}" ng-click="downVoteCount()">
+  </div>
+  </div>
+
+  <div class="eachEventParent">
+    <div class="eventName">{{event.name}}</div>
+     Date: {{event.date}}<br />
+    Time: {{event.time}}
+    <address>
+        <strong>  Address :</strong> <br/>
+        {{event.location.address}},
+        {{event.location.city}},
+        {{event.location.province}}
+    </address> <br />
+    <div class="imgClass">
+   <img ng-src="{{event.imageUrl}}" alt="">1
+   <h4>Some Awesome foods:</h4>
+   <li ng-repeat="sess in event.sessions">{{sess.name}}</li>
+   </div>
+ </div>
+</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-resource.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script> -->
+  <script type="text/javascript" src="app.js"></script>
+  <script src="controller/EventsController.js"></script>
+  <script type="text/javascript" src="controller/EditEventController.js"></script></body>
+  <script type="text/javascript" src="services/EventData.js"></script>
+  <script type="text/javascript" src="controller/EditProfileController.js"></script>
+  <script type="text/javascript" src="services/GravatarUrlBuilder.js"></script></html>
+</body>
+</html>

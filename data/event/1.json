@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "name": "Noodle Market",
+    "date": "9/10/2016",
+    "time": "7.00 PM",
+    "location": {
+        "address": "Hyde Park",
+        "city": "Sydney",
+        "province": "NSW"
+    },
+    "imageUrl": "/images/Noodlemarket.jpg",
+    "imageUpArrow": "/images/up-arrow.png",
+    "imagedownArrow": "/images/down-arrow.png",
+    "sessions": [{
+        "name": "Messina, Waffal on Stick"
+    }, {
+        "name": "Spring Rolls, Dumplings"
+    }, {
+        "name": "Chips on Stick, Drinks"
+    }]
+}

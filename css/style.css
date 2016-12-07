@@ -1,0 +1,42 @@
+.heading{
+  color: orange;
+}
+.event-details{
+  color: orange;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+
+}
+.imgClass img{
+  height: 250px;
+  border-radius: 100em;
+}
+.eventName{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.arrowsUp img{
+  height: 50px;
+  float: left;;
+}
+.arrowsDown img{
+  height: 50px;
+  float: left;
+}
+.arrowsParent{
+  height: 100px;
+  width: 70px;
+  float:left;
+}
+.eachEventParent{
+  height: 300px;
+  width: 200px;
+  float: left;
+}
+.gravatarImg{
+  height: 200px;
+  width:200px;
+  border: 2px solid black;
+}
