@@ -19,7 +19,7 @@
     </div>
     <div ng-controller="EventsController" class="event-details">
         <h1>Event Details</h1>
-        <div class="arrowsParent margin">
+        <div class="arrowsParent childdiv">
             <div class="arrowsUp">
                 <img ng-src="{{event.imageUpArrow}}" ng-click="upVoteCount()">
             </div>
@@ -28,7 +28,7 @@
                 <img ng-src="{{event.imagedownArrow}}" ng-click="downVoteCount()">
             </div>
         </div>
-        <div class="floatleft margin">
+        <div class="childdiv">
             <div class="eventName">{{event.name}}</div>
             <div>Date: {{event.date}}<br /> Time: {{event.time}}</div>
             <div>
@@ -41,10 +41,10 @@
             </div>
         </div>
 
-        <div class="imgClass floatleft margin">
+        <div class="imgClass childdiv">
             <img ng-src="{{event.imageUrl}}" alt="">
         </div>
-        <div class="floatleft">
+        <div class="childdiv">
             <h4>Some Awesome foods:</h4>
             <li ng-repeat="sess in event.sessions">{{sess.name}}</li>
         </div>

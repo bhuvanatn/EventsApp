@@ -4,19 +4,25 @@
 .event-details{
   color: orange;
   height: 500px;
-  width: 800px;
+  width: 850px;
   margin: 0 auto;
 
 }
-.margin {
-  margin: 10px 20px 10px 20px;
-}
+
 .imgClass img{
   height: 250px;
   border-radius: 100em;
 }
+
+.margin {
+  margin: 10px 20px 10px 20px;
+}
 .floatleft{
   float: left;
+}
+.childdiv{
+  float : left;
+  margin: 10px 20px 10px 20px;
 }
 .eventName{
   font-size: 20px;
