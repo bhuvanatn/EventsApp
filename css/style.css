@@ -4,13 +4,19 @@
 .event-details{
   color: orange;
   height: 500px;
-  width: 500px;
+  width: 800px;
   margin: 0 auto;
 
+}
+.margin {
+  margin: 10px 20px 10px 20px;
 }
 .imgClass img{
   height: 250px;
   border-radius: 100em;
+}
+.floatleft{
+  float: left;
 }
 .eventName{
   font-size: 20px;
@@ -28,11 +34,9 @@
 .arrowsParent{
   height: 100px;
   width: 70px;
-  float:left;
+  float: left;
 }
 .eachEventParent{
-  height: 300px;
-  width: 200px;
   float: left;
 }
 .gravatarImg{
