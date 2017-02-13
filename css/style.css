@@ -2,7 +2,6 @@
   color: orange;
 }
 .event-details{
-  color: orange;
   height: 500px;
   width: 850px;
   margin: 0 auto;
@@ -10,7 +9,7 @@
 }
 
 .imgClass img{
-  height: 250px;
+  height: 150px;
   border-radius: 100em;
 }
 
