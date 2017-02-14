@@ -20,11 +20,11 @@
     <div ng-controller="EventsController" class="event-details">
         <h1>Event Details</h1>
         <div class="arrowsParent childdiv">
-            <div class="arrowsUp">
+            <div class="arrowsUp floatleft">
                 <img ng-src="{{event.imageUpArrow}}" ng-click="upVoteCount()">
             </div>
-            <div><label for="">{{count}}</label></div>
-            <div class="arrowsDown">
+            <div ng-if= "count >= 0" class="childdiv floatleft"><label for="">{{count}}</label></div>
+            <div class="arrowsDown floatleft">
                 <img ng-src="{{event.imagedownArrow}}" ng-click="downVoteCount()">
             </div>
         </div>
