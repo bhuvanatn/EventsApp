@@ -1,21 +1,37 @@
 {
     "id": 1,
-    "name": "Noodle Market",
-    "date": "9/10/2016",
-    "time": "7.00 PM",
+    "name": "Bhuvana Sanu Sweetheart's",
+    "date": "17/07/2009",
+    "time": "4.00 AM",
     "location": {
-        "address": "Hyde Park",
-        "city": "Sydney",
-        "province": "NSW"
+        "address": "Ganesh Temple",
+        "city": "Bangalore",
+        "province": "India"
     },
     "imageUrl": "/images/Noodlemarket.jpg",
     "imageUpArrow": "/images/up-arrow.png",
     "imagedownArrow": "/images/down-arrow.png",
     "sessions": [{
-        "name": "Messina, Waffal on Stick"
+        "name": "Noodle Market",
+        "creatorName": "Bhuvana",
+        "duration": 3,
+        "type": "Relaxing",
+        "upVoteCount": 0,
+        "imageUrl": "/images/Noodlemarket.jpg"
+
     }, {
-        "name": "Spring Rolls, Dumplings"
+        "name": "CupCake Beachside",
+        "creatorName": "Bhuvana",
+        "duration": 2,
+        "type": "On way to shopping",
+        "upVoteCount": 0,
+        "imageUrl": "/images/Noodlemarket.jpg"
     }, {
-        "name": "Chips on Stick, Drinks"
+        "name": "My Little Rust Walk",
+        "creatorName": "Bhuvana",
+        "duration": 1,
+        "type": "Relaxing for Rusty",
+        "upVoteCount": 0,
+        "imageUrl": "/images/Noodlemarket.jpg"
     }]
 }

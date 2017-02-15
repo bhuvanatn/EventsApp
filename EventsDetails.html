@@ -19,39 +19,51 @@
     </div>
     <div ng-controller="EventsController" class="event-details">
         <h1>Event Details</h1>
-        <div class="arrowsParent childdiv">
-            <div class="arrowsUp floatleft">
-                <img ng-src="{{event.imageUpArrow}}" ng-click="upVoteCount()">
-            </div>
-            <div ng-if= "count >= 0" class="childdiv floatleft"><label for="">{{count}}</label></div>
-            <div class="arrowsDown floatleft">
-                <img ng-src="{{event.imagedownArrow}}" ng-click="downVoteCount()">
-            </div>
+<div class="center">
+        <div class="imgClass childdiv">
+            <img ng-src="{{event.imageUrl}}" alt="">
         </div>
         <div class="childdiv">
             <div class="eventName">{{event.name}}</div>
             <div>Date: {{event.date}}<br /> Time: {{event.time}}</div>
             <div>
                 <address>
-                <strong>  Address :</strong> <br/>
-                {{event.location.address}},
-                {{event.location.city}},
-                {{event.location.province}}
-            </address>
+                    <strong>  Address :</strong> <br/>
+                    {{event.location.address}},
+                    {{event.location.city}},
+                    {{event.location.province}}
+                </address>
             </div>
         </div>
+        </div>
+        <li ng-repeat="sess in event.sessions">
+            <div class="arrowsParent childdiv">
+                <div class="childdiv">
+                    <div class="arrowsUp" ng-click="upVoteSession(sess)">
+                        <img ng-src="{{event.imageUpArrow}}" >
+                    </div>
+                    <label ng-if="sess.upVoteCount >= 0">{{sess.upVoteCount}}</label>
+                    <div class="arrowsUp" ng-click="downVoteSession(sess)">
+                        <img ng-src="{{event.imagedownArrow}}" >
+                    </div>
+                </div>
+                <div class="floatleft margin">
+                    <h4>Some Awesome foods:</h4> {{sess.name}} </br>
+                    {{sess.creatorName}}</br>
+                    {{sess.duration}}</br>
+                    {{sess.type}}</br>
+                    {{sess.upVoteCount}}</br>
 
-        <div class="imgClass childdiv">
-            <img ng-src="{{event.imageUrl}}" alt="">
-        </div>
-        <div class="childdiv">
-            <h4>Some Awesome foods:</h4>
-            <li ng-repeat="sess in event.sessions">{{sess.name}}</li>
-        </div>
+                </div>
+                <div class="imgClass floatleft margin">
+                    <img ng-src="{{event.imageUrl}}" alt="">
+                </div>
+                </br>
+            </div>
+        </li>
+
 
     </div>
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-resource.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script> -->
