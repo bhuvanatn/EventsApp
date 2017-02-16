@@ -1,7 +1,8 @@
 MyApp.controller("EditEventController", function($scope, eventData) {
     $scope.title = "Add New Event";
     $scope.saveEvent = function(event, newEventForm) {
-              if(newEventForm.$valid) {
+        if (newEventForm.$valid) {
+            console.log("I am newEventForm", newEventForm);
             window.alert("saved clicked");
             // eventData.save(event)
             //     .$promise
