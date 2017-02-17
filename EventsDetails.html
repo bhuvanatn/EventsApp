@@ -19,32 +19,33 @@
     </div>
     <div ng-controller="EventsController" class="event-details">
         <h1>Event Details</h1>
-<div class="center">
-        <div class="imgClass childdiv">
-            <img ng-src="{{event.imageUrl}}" alt="">
-        </div>
-        <div class="childdiv">
-            <div class="eventName">{{event.name}}</div>
-            <div>Date: {{event.date}}<br /> Time: {{event.time}}</div>
-            <div>
-                <address>
+        <button type="button" ng-click="scrollToSession()">Scroll</button>
+        <div class="center">
+            <div class="imgClass childdiv">
+                <img ng-src="{{event.imageUrl}}" alt="">
+            </div>
+            <div class="childdiv">
+                <div class="eventName">{{event.name}}</div>
+                <div>Date: {{event.date}}<br /> Time: {{event.time}}</div>
+                <div>
+                    <address>
                     <strong>  Address :</strong> <br/>
                     {{event.location.address}},
                     {{event.location.city}},
                     {{event.location.province}}
                 </address>
+                </div>
             </div>
         </div>
-        </div>
-        <li ng-repeat="sess in event.sessions">
+        <li ng-repeat="sess in event.sessions" id="session{{sess.id}}">
             <div class="arrowsParent childdiv">
                 <div class="childdiv">
                     <div class="arrowsUp" ng-click="upVoteSession(sess)">
-                        <img ng-src="{{event.imageUpArrow}}" >
+                        <img ng-src="{{event.imageUpArrow}}">
                     </div>
                     <label ng-if="sess.upVoteCount >= 0">{{sess.upVoteCount}}</label>
                     <div class="arrowsUp" ng-click="downVoteSession(sess)">
-                        <img ng-src="{{event.imagedownArrow}}" >
+                        <img ng-src="{{event.imagedownArrow}}">
                     </div>
                 </div>
                 <div class="floatleft margin">
@@ -74,7 +75,7 @@
 <script type="text/javascript" src="services/EventData.js"></script>
 <script type="text/javascript" src="controller/EditProfileController.js"></script>
 <script type="text/javascript" src="services/GravatarUrlBuilder.js"></script>
-
+<script type ="text/javascript" src="services/Cache.js"></script>
 </html>
 </body>
 

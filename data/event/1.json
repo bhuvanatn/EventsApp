@@ -12,6 +12,7 @@
     "imageUpArrow": "/images/up-arrow.png",
     "imagedownArrow": "/images/down-arrow.png",
     "sessions": [{
+      "id" : 1,
         "name": "Noodle Market",
         "creatorName": "Bhuvana",
         "duration": 3,
@@ -20,6 +21,7 @@
         "imageUrl": "/images/Noodlemarket.jpg"
 
     }, {
+      "id": 2,
         "name": "CupCake Beachside",
         "creatorName": "Bhuvana",
         "duration": 2,
@@ -27,6 +29,7 @@
         "upVoteCount": 0,
         "imageUrl": "/images/cup-cake.jpg"
     }, {
+      "id": 3,
         "name": "My Little Rust Walk",
         "creatorName": "Bhuvana",
         "duration": 1,
