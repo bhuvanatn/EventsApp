@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Event Registration</title>
+</head>
+
+<body>
+    <div ng-controller="LocaleSampleController">
+        <h3>{{myDate | date:myFormat}}</h3>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-resource.js"></script>
+    <script src="https://code.angularjs.org/1.4.0/i18n/angular-locale_hi-in.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="controller/EventsController.js"></script>
+    <script src="controller/LocaleSampleController.js"></script>
+    <script type="text/javascript" src="controller/EditEventController.js"></script>
+    <script type="text/javascript" src="services/EventData.js"></script>
+    <script type="text/javascript" src="controller/EditProfileController.js"></script>
+    <script type="text/javascript" src="services/GravatarUrlBuilder.js"></script>
+    <script type="text/javascript" src="services/Cache.js"></script>
+    <script type="text/javascript" src="controller/CacheSampleController.js"></script>
+    <script type="text/javascript" src="controller/CompileSampleController.js"></script>
+</body>
+
+</html>
