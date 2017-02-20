@@ -51,7 +51,7 @@
     <br>
 
     </br>
-        <li ng-repeat="sess in event.sessions | orderBy: event.sortorder | limitTo: 3 | filter: query" id="session{{sess.id}}">
+        <li ng-repeat="sess in event.sessions | orderBy: event.sortorder | limitTo: 3 | filter: query " id="session{{sess.id}}">
             <div class="arrowsParent childdiv">
                 <div class="childdiv">
                     <div class="arrowsUp" ng-click="upVoteSession(sess)">
@@ -65,7 +65,7 @@
                 <div class="floatleft margin">
                     <h4>Some Awesome foods:</h4> {{sess.name | uppercase}} </br>
                     {{sess.creatorName}}</br>
-                    {{sess.duration}}</br>
+                Duration:  {{sess.duration | dura}}</br>
                     {{sess.type}}</br>
                     {{sess.upVoteCount}}</br>
 
@@ -90,6 +90,7 @@
 <script type="text/javascript" src="controller/EditProfileController.js"></script>
 <script type="text/javascript" src="services/GravatarUrlBuilder.js"></script>
 <script type="text/javascript" src="services/Cache.js"></script>
+<script type="text/javascript" src="filter.js"></script>
 
 </html>
 </body>
