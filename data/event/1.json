@@ -1,8 +1,10 @@
+
 {
     "id": 1,
     "name": "Bhuvana Sanu Sweetheart's",
     "date": "17/07/2009",
     "time": "4.00 AM",
+    "sortorder" : "-upVoteCount",
     "location": {
         "address": "Ganesh Temple",
         "city": "Bangalore",
@@ -25,7 +27,7 @@
         "name": "CupCake Beachside",
         "creatorName": "Bhuvana",
         "duration": 2,
-        "type": "On way to shopping",
+        "type": "Shopping",
         "upVoteCount": 0,
         "imageUrl": "/images/cup-cake.jpg"
     }, {
@@ -33,7 +35,7 @@
         "name": "My Little Rust Walk",
         "creatorName": "Bhuvana",
         "duration": 1,
-        "type": "Relaxing for Rusty",
+        "type": "Walking",
         "upVoteCount": 0,
         "imageUrl": "/images/cup-cake-bhunu.jpg"
     }]
