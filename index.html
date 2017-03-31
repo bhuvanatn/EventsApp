@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-US" ng-app="MyApp">
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <div>
+        <a href="#/newEvent">Create Event</a>|
+        <a href="#/eventList">Event List</a>|
+        <a href="#/eventsDetails">Event Details</a>
+        <!-- <a href="EditProfile.html">Edit Profile</a> -->
+    </div>
+    <ng-view></ng-view>
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-resource.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-resource.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 <script type="text/javascript" src="app.js"></script>
 <script src="ControllerTest/clickbutton.js"></script>
 <script type="text/javascript" src="ControllerTest/secondController.js"></script>
 <script type="text/javascript" src="controller/EditEventController.js"></script>
+<script type="text/javascript" src="controller/EventsController.js"></script>
+<script type="text/javascript" src="controller/EventListController.js"></script>
+<script type="text/javascript" src="filter.js"></script>
 <script type="text/javascript" src="services/EventData.js"></script>
 <script type="text/javascript" src="services/GravatarUrlBuilder.js"></script>
-
-
-<body>
-    <div>
-        <a href="EventsDetails.html">Event Details</a>
-        <a href="NewEvent.html">Create Event</a>
-          <a href="EditProfile.html">Edit Profile</a>
-    </div>
-<!-- <div>
- 	<p>Name : <input type="text" ng-model="name"></p>
- 	<h1>Hello {{name}}</h1>
-</div>
-
-<div ng-controller="MyCont">
-{{ firstName + " " + lastName }}
-<button ng-click="myFunc()">OKK</button>
-</div>
-
-<div ng-controller="secCont">
-  <button type="button" name="button" ng-click="secFunc()">My Second Controller</button>
-  <label for="">{{count}}</label>
-</div> -->
-
 </body>
 </html>

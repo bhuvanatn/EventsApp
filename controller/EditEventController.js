@@ -4,15 +4,15 @@ MyApp.controller("EditEventController", function($scope, eventData) {
         if (newEventForm.$valid) {
             console.log("I am newEventForm", newEventForm);
             window.alert("saved clicked");
-            // eventData.save(event)
-            //     .$promise
-            //     .then(function(response) {
-            //         // alert("you clicked saved");
-            //         console.log('Success..', response);
-            //     })
-            //     .catch(function(response) {
-            //         console.log('Failure..', response);
-            //     });
+            eventData.save(event)
+                .$promise
+                .then(function(response) {
+                    // alert("you clicked saved");
+                    console.log('Success..', response);
+                })
+                .catch(function(response) {
+                    console.log('Failure..', response);
+                });
         }
     };
     $scope.cancelEdit = function() {

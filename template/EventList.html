@@ -1,0 +1,27 @@
+<div>
+    <li ng-repeat="sess in event.sessions | orderBy: event.sortorder | limitTo: 3 | filter: query " id="session{{sess.id}}">
+        <div class="arrowsParent childdiv">
+            <div class="childdiv">
+                <div class="arrowsUp" ng-click="upVoteSession(sess)">
+                    <img ng-src="{{event.imageUpArrow}}">
+                </div>
+                <label ng-if="sess.upVoteCount >= 0">{{sess.upVoteCount}}</label>
+                <div class="arrowsUp" ng-click="downVoteSession(sess)">
+                    <img ng-src="{{event.imagedownArrow}}">
+                </div>
+            </div>
+            <div class="floatleft margin">
+                <h4>Some Awesome foods:</h4> {{sess.name | uppercase}} </br>
+                {{sess.creatorName}}</br>
+                Duration: {{sess.duration | dura}}</br>
+                {{sess.type}}</br>
+                {{sess.upVoteCount}}</br>
+
+            </div>
+            <div class="imgClass floatleft margin">
+                <img ng-src="{{sess.imageUrl}}" alt="">
+            </div>
+            </br>
+        </div>
+    </li>
+</div>
